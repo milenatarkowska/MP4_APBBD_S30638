@@ -1,0 +1,6 @@
+@MP4_APBBD_S30638_HostAddress = http://localhost:5196
+
+GET {{MP4_APBBD_S30638_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
