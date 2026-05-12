@@ -11,9 +11,9 @@ public class ComponentManufacturer
     
     [Required]
     [MaxLength(300)]
-    public string Name { get; set; } = null!;
+    public string FullName { get; set; } = null!;
     
-    public int FoundedYear { get; set; }
+    public DateTime FoundationDate { get; set; }
     
     public ICollection<Component> Components { get; set; }
         = new List<Component>();
