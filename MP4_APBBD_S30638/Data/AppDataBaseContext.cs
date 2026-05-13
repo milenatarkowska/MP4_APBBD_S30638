@@ -85,6 +85,6 @@ public class AppDataBaseContext : DbContext
             new ComponentManufacturer { Id = 2, Abbreviation = "AMD", FullName = "Advanced Micro Devices", FoundationDate = new DateTime(1969, 5, 1) },
             new ComponentManufacturer { Id = 3, Abbreviation = "NVD", FullName = "NVIDIA", FoundationDate = new DateTime(1993, 4, 5) }
         );
-        base.OnModelCreating(modelBuilder);
+        base.OnModelCreating(modelBuilder); 
     }
 }
