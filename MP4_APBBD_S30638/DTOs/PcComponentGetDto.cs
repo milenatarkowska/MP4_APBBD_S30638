@@ -3,11 +3,11 @@
 public class PcComponentGetDto
 {
     // GET api/pcs/{id}/components
-    public int ComponentId { get; set; }
+    public string ComponentCode { get; set; }
 
     public string Name { get; set; } = null!;
 
     public string Type { get; set; } = null!;
 
-    public int Quantity { get; set; }
+    public int Amount { get; set; }
 }
