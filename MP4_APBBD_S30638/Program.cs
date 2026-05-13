@@ -1,10 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using MP4_APBBD_S30638.Data;
+using MP4_APBBD_S30638.Service;
+using MP4_APBBD_S30638.Service.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+builder.Services.AddScoped<IPcService, PcService>();
 
 builder.Services.AddDbContext<AppDataBaseContext>(options =>
     options.UseSqlServer(
